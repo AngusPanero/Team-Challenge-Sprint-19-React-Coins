@@ -13,4 +13,12 @@ const addFavorite = (coin) => {
     }
 };
 
-export default addFavorite;
+const removeFavorite = (id, setFavorites) => {
+    let favorites = JSON.parse(localStorage.getItem("favorite")) || []
+
+    favorites = favorites.filter((fav) => fav.id !== id)
+    localStorage.setItem("favorite", JSON.stringify(favorites))
+    setFavorites(favorites);
+}
+
+export { addFavorite, removeFavorite }

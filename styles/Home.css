@@ -1,0 +1,25 @@
+.coin-card-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.coin-card{
+    border: rgba(255, 255, 255, 0.575) 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 17rem;
+    height: 18rem;
+    background: rgba(74, 40, 96, 0.7); 
+    backdrop-filter: blur(10px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

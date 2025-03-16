@@ -1,0 +1,21 @@
+.coin-card-fav-individual{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.coin-card-fav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    width: 17rem;
+    height: 18rem;
+    background: rgba(74, 40, 96, 0.7); 
+    border: rgba(255, 255, 255, 0.575) 1px solid;
+    backdrop-filter: blur(10px);
+}
+

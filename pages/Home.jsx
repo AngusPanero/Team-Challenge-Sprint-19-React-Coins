@@ -1,6 +1,8 @@
 import React from "react"
 import { useState, useEffect } from "react";
-import addFavorite from "../functions/Function.jsx";
+import { addFavorite } from "../functions/Function.jsx";
+import { Link } from 'react-router-dom';
+import "../styles/Home.css"
 
 const CoinsComponent = () => {
     const [ data, setData ] = useState([])
@@ -32,18 +34,23 @@ const CoinsComponent = () => {
     if (error) return <p>Error: {error}</p>;
 
     return(
-        <div>
-            <h1>Lista de Criptomonedas</h1>
+        <>
+        
+        <Link to="/favorites">⭐ Ver Favoritos</Link>
+        <h1>Top 100 Cryptos In The World</h1>   
+        <div className="coin-card-content">
+        
             {data.map((coin) => (
-                <div>
-                    <p>Rank: {coin.rank}, {coin.symbol}, {coin.name}</p>
-                    <p>Price: ${parseFloat(coin.priceUsd).toFixed(2)}</p>
+                <div className="coin-card">
+                    <Link to={`/coin/${coin.id}`}><p>Top: {coin.rank} {coin.symbol} {coin.name}</p></Link>
                     <p>Market Cap: ${parseFloat(coin.marketCapUsd).toFixed(2)}</p>
                     <p>Volume Usd 24Hr: ${parseFloat(coin.volumeUsd24Hr).toFixed(2)}</p>
-                    <button onClick={() => addFavorite(coin)}>Favorito</button>
+                    <p>Price: $ {parseFloat(coin.priceUsd).toFixed(2)}</p>
+                    <button onClick={() => addFavorite(coin)}>⭐ Favorito ⭐</button>
                 </div>
             ))}
         </div>
+        </>
     )  
 }
 
