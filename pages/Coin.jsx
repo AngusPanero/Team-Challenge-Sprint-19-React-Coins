@@ -44,8 +44,8 @@ const Coin = () => {
                     <p>Top: {coindata.rank} {coindata.symbol} {coindata.name}</p>
                     <p>Market Cap: ${parseFloat(coindata.marketCapUsd).toFixed(2)}</p>
                     <p>Volume Usd 24Hr: ${parseFloat(coindata.volumeUsd24Hr).toFixed(2)}</p>
-                    <p>Supply: ${parseFloat(coindata.supply).toFixed(2)}</p>
-                    <p>Max SUpply: ${parseFloat(coindata.maxSupply).toFixed(2)}</p>
+                    <p>Supply: {parseFloat(coindata.supply).toFixed(2)}</p>
+                    <p>Max Supply: {parseFloat(coindata.maxSupply).toFixed(2)}</p>
                     <p>Change Percent 24Hr: ${parseFloat(coindata.changePercent24Hr).toFixed(2)}</p>
                     <p>VWAP 24Hr: ${parseFloat(coindata.vwap24Hr).toFixed(2)}</p>
                     <a href={coindata.explorer} target="_blank"><p>View URL Explorer</p></a>
