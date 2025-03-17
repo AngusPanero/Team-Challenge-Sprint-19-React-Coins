@@ -35,8 +35,6 @@ const CoinsComponent = () => {
 
     return(
         <>
-        
-        <Link to="/favorites">⭐ Ver Favoritos</Link>
         <h1>Top 100 Cryptos In The World</h1>   
         <div className="coin-card-content">
         

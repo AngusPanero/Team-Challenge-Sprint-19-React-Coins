@@ -21,7 +21,6 @@ const Favorites = () => {
 
     return(
         <>
-        <Link to="/">Home</Link>
         <h1>Your Favorites Cryptos Currency</h1>
         <div className="coin-card-fav-individual">
             

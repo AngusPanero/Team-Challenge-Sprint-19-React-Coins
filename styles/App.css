@@ -34,11 +34,30 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10rem;
 }
 
 h1{
     display: flex;
     justify-content: center;
     color: white;
+    margin-bottom: 3rem;
+}
+
+.logo-container{
+    display: flex;
+}
+
+.logo{
+    height: 6rem;
+    width: auto;
+}
+
+.logo-name{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+
 }

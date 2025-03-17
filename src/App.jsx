@@ -6,8 +6,13 @@ const App = () => {
     return(
         <>
             <nav>
-                <div>Logo</div>
-                <p>Calendario NYSE</p>
+                <div className="logo-container">
+                    <a href="/"><img className="logo" src="../img/image0.png" alt="logo" /></a>
+                    <a href="/"><p className="logo-name">Coin-World</p></a>
+                </div>
+                <a href="/"><p>Home</p></a>
+                <a href="/favorites"><p>⭐ Your Favorites ⭐</p></a>
+            <a href="https://es.tradingview.com/markets/stocks-usa/earnings/" target="_blank"><p>NYSE - Stocks Calendar</p></a>
             </nav>
 
             <RouterPages />

@@ -13,8 +13,8 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    width: 17rem;
-    height: 18rem;
+    width: 18rem;
+    height: 35rem;
     background: rgba(74, 40, 96, 0.7); 
     backdrop-filter: blur(10px);
 }
